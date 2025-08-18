@@ -1,0 +1,3 @@
+path: web/nature-cms
+server:
+  docroot: web

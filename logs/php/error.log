@@ -1,0 +1,27 @@
+[18-Aug-2025 12:11:59 UTC] PHP Fatal error:  Uncaught Error: Class "WpOrg\Requests\Exception" not found in C:\Users\solca\Local Sites\smdcnature\app\public\wp-includes\Requests\src\Transport\Curl.php:490
+Stack trace:
+#0 C:\Users\solca\Local Sites\smdcnature\app\public\wp-includes\Requests\src\Transport\Curl.php(219): WpOrg\Requests\Transport\Curl->process_response('', Array)
+#1 C:\Users\solca\Local Sites\smdcnature\app\public\wp-includes\Requests\src\Requests.php(469): WpOrg\Requests\Transport\Curl->request('https://api.wor...', Array, Array, Array)
+#2 C:\Users\solca\Local Sites\smdcnature\app\public\wp-includes\class-wp-http.php(415): WpOrg\Requests\Requests::request('https://api.wor...', Array, Array, 'POST', Array)
+#3 C:\Users\solca\Local Sites\smdcnature\app\public\wp-includes\class-wp-http.php(638): WP_Http->request('https://api.wor...', Array)
+#4 C:\Users\solca\Local Sites\smdcnature\app\public\wp-includes\http.php(196): WP_Http->post('https://api.wor...', Array)
+#5 C:\Users\solca\Local Sites\smdcnature\app\public\wp-includes\update.php(213): wp_remote_post('https://api.wor...', Array)
+#6 phar://C:/Program Files (x86)/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/core-command/src/Core_Command.php(1356): wp_version_check(Array, NULL)
+#7 phar://C:/Program Files (x86)/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/core-command/src/Core_Command.php(82): Core_Command->get_updates(Array)
+#8 [internal function]: Core_Command->check_update(Array, Array)
+#9 phar://C:/Program Files (x86)/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Dispatcher/CommandFactory.php(100): call_user_func(Array, Array, Array)
+#10 [internal function]: WP_CLI\Dispatcher\CommandFactory::{closure:WP_CLI\Dispatcher\CommandFactory::create_subcommand():97}(Array, Array)
+#11 phar://C:/Program Files (x86)/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Dispatcher/Subcommand.php(497): call_user_func(Object(Closure), Array, Array)
+#12 phar://C:/Program Files (x86)/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php(470): WP_CLI\Dispatcher\Subcommand->invoke(Array, Array, Array)
+#13 phar://C:/Program Files (x86)/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php(493): WP_CLI\Runner->run_command(Array, Array)
+#14 phar://C:/Program Files (x86)/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php(1295): WP_CLI\Runner->run_command_and_exit()
+#15 phar://C:/Program Files (x86)/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Bootstrap/LaunchRunner.php(28): WP_CLI\Runner->start()
+#16 phar://C:/Program Files (x86)/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/bootstrap.php(84): WP_CLI\Bootstrap\LaunchRunner->process(Object(WP_CLI\Bootstrap\BootstrapState))
+#17 phar://C:/Program Files (x86)/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/vendor/wp-cli/wp-cli/php/wp-cli.php(35): WP_CLI\bootstrap()
+#18 phar://C:/Program Files (x86)/Local/resources/extraResources/bin/wp-cli/wp-cli.phar/php/boot-phar.php(20): include('phar://C:/Progr...')
+#19 C:\Program Files (x86)\Local\resources\extraResources\bin\wp-cli\wp-cli.phar(4): include('phar://C:/Progr...')
+#20 {main}
+  thrown in C:\Users\solca\Local Sites\smdcnature\app\public\wp-includes\Requests\src\Transport\Curl.php on line 490
+[18-Aug-2025 12:13:39 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\class-wp-customize-widgets.php on line 926
+[18-Aug-2025 14:03:07 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\class-wp-customize-widgets.php on line 926
+[18-Aug-2025 14:46:58 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\class-wp-customize-widgets.php on line 926
