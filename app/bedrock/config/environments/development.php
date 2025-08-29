@@ -18,18 +18,19 @@ Config::define('WP_DEBUG_DISPLAY', false);
 Config::define('WP_DEBUG_LOG', env('WP_DEBUG_LOG') ?? false);
 Config::define('WP_DISABLE_FATAL_ERROR_HANDLER', false);
 Config::define('SCRIPT_DEBUG', false);
-Config::define('DISALLOW_INDEXING', true);
+Config::define('DISALLOW_INDEXING', false);
 
 ini_set('display_errors', '0');
 
 /**
  * Custom Settings
  */
-Config::define('AUTOMATIC_UPDATER_DISABLED', false);
+define( 'AUTOMATIC_UPDATER_DISABLED', false );
+define( 'WP_AUTO_UPDATE_CORE', true );
 Config::define('DISABLE_WP_CRON', env('DISABLE_WP_CRON') ?: false);
 
 // Disable the plugin and theme file editor in the admin
-Config::define('DISALLOW_FILE_EDIT', true);
+Config::define('DISALLOW_FILE_EDIT', false);
 
 // Disable plugin and theme updates and installation from the admin
 Config::define('DISALLOW_FILE_MODS', false);
