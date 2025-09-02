@@ -266,3 +266,4 @@ Stack trace:
 #7 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php(7): require('C:\\Users\\solca\\...')
 #8 {main}
   thrown in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\smdc-nature\templates\home-module\hero-section.php on line 1
+[02-Sep-2025 12:11:24 UTC] PHP Warning:  Trying to access array offset on false in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\smdc-nature\templates\home-module\video-section.php on line 17
