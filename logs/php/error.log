@@ -181,3 +181,88 @@ AND hook = 'wp_mail_smtp_admin_notifications_update'
 AND `group_id` = 2
  LIMIT 1 ) IS NULL made by require_once('wp-load.php'), require_once('C:/Users/solca/Local Sites/smdcnature/app/bedrock/web/wp-config.php'), require_once('wp-settings.php'), do_action('init'), WP_Hook->do_action, WP_Hook->apply_filters, WPMailSMTP\Core->get_tasks, WPMailSMTP\Tasks\Tasks->init, WPMailSMTP\Tasks\NotificationsUpdateTask->init, WPMailSMTP\Tasks\Task->register, WPMailSMTP\Tasks\Task->register_recurring, as_schedule_recurring_action, ActionScheduler_ActionFactory->create, ActionScheduler_ActionFactory->store_unique_action, ActionScheduler_DBStore->save_unique_action, ActionScheduler_DBStore->save_action_to_db
 [29-Aug-2025 17:38:31 UTC] Cron reschedule event error for hook: action_scheduler_run_queue, Error code: invalid_schedule, Error message: Event schedule does not exist., Data: {"schedule":"every_minute","args":["WP Cron"],"interval":60}
+[02-Sep-2025 11:36:47 UTC] Cron reschedule event error for hook: wp_privacy_delete_old_export_files, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"hourly","args":[],"interval":3600}
+[02-Sep-2025 11:37:50 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function have_rows() in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\smdc-nature\templates\home-module\hero-section.php:1
+Stack trace:
+#0 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\smdc-nature\templates\home-template.php(7): include()
+#1 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\template.php(812): require('C:\\Users\\solca\\...')
+#2 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\template.php(745): load_template('C:\\Users\\solca\\...', false, Array)
+#3 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\general-template.php(206): locate_template(Array, true, false, Array)
+#4 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\smdc-nature\front-page.php(4): get_template_part('templates/home', 'template')
+#5 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\template-loader.php(106): include('C:\\Users\\solca\\...')
+#6 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-blog-header.php(19): require_once('C:\\Users\\solca\\...')
+#7 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php(7): require('C:\\Users\\solca\\...')
+#8 {main}
+  thrown in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\smdc-nature\templates\home-module\hero-section.php on line 1
+[02-Sep-2025 11:37:54 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function have_rows() in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\smdc-nature\templates\home-module\hero-section.php:1
+Stack trace:
+#0 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\smdc-nature\templates\home-template.php(7): include()
+#1 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\template.php(812): require('C:\\Users\\solca\\...')
+#2 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\template.php(745): load_template('C:\\Users\\solca\\...', false, Array)
+#3 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\general-template.php(206): locate_template(Array, true, false, Array)
+#4 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\smdc-nature\front-page.php(4): get_template_part('templates/home', 'template')
+#5 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\template-loader.php(106): include('C:\\Users\\solca\\...')
+#6 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-blog-header.php(19): require_once('C:\\Users\\solca\\...')
+#7 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php(7): require('C:\\Users\\solca\\...')
+#8 {main}
+  thrown in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\smdc-nature\templates\home-module\hero-section.php on line 1
+[02-Sep-2025 11:37:54 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function have_rows() in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\smdc-nature\templates\home-module\hero-section.php:1
+Stack trace:
+#0 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\smdc-nature\templates\home-template.php(7): include()
+#1 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\template.php(812): require('C:\\Users\\solca\\...')
+#2 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\template.php(745): load_template('C:\\Users\\solca\\...', false, Array)
+#3 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\general-template.php(206): locate_template(Array, true, false, Array)
+#4 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\smdc-nature\front-page.php(4): get_template_part('templates/home', 'template')
+#5 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\template-loader.php(106): include('C:\\Users\\solca\\...')
+#6 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-blog-header.php(19): require_once('C:\\Users\\solca\\...')
+#7 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php(7): require('C:\\Users\\solca\\...')
+#8 {main}
+  thrown in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\smdc-nature\templates\home-module\hero-section.php on line 1
+[02-Sep-2025 11:37:55 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function have_rows() in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\smdc-nature\templates\home-module\hero-section.php:1
+Stack trace:
+#0 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\smdc-nature\templates\home-template.php(7): include()
+#1 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\template.php(812): require('C:\\Users\\solca\\...')
+#2 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\template.php(745): load_template('C:\\Users\\solca\\...', false, Array)
+#3 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\general-template.php(206): locate_template(Array, true, false, Array)
+#4 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\smdc-nature\front-page.php(4): get_template_part('templates/home', 'template')
+#5 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\template-loader.php(106): include('C:\\Users\\solca\\...')
+#6 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-blog-header.php(19): require_once('C:\\Users\\solca\\...')
+#7 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php(7): require('C:\\Users\\solca\\...')
+#8 {main}
+  thrown in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\smdc-nature\templates\home-module\hero-section.php on line 1
+[02-Sep-2025 11:37:55 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function have_rows() in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\smdc-nature\templates\home-module\hero-section.php:1
+Stack trace:
+#0 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\smdc-nature\templates\home-template.php(7): include()
+#1 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\template.php(812): require('C:\\Users\\solca\\...')
+#2 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\template.php(745): load_template('C:\\Users\\solca\\...', false, Array)
+#3 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\general-template.php(206): locate_template(Array, true, false, Array)
+#4 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\smdc-nature\front-page.php(4): get_template_part('templates/home', 'template')
+#5 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\template-loader.php(106): include('C:\\Users\\solca\\...')
+#6 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-blog-header.php(19): require_once('C:\\Users\\solca\\...')
+#7 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php(7): require('C:\\Users\\solca\\...')
+#8 {main}
+  thrown in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\smdc-nature\templates\home-module\hero-section.php on line 1
+[02-Sep-2025 11:37:55 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function have_rows() in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\smdc-nature\templates\home-module\hero-section.php:1
+Stack trace:
+#0 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\smdc-nature\templates\home-template.php(7): include()
+#1 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\template.php(812): require('C:\\Users\\solca\\...')
+#2 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\template.php(745): load_template('C:\\Users\\solca\\...', false, Array)
+#3 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\general-template.php(206): locate_template(Array, true, false, Array)
+#4 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\smdc-nature\front-page.php(4): get_template_part('templates/home', 'template')
+#5 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\template-loader.php(106): include('C:\\Users\\solca\\...')
+#6 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-blog-header.php(19): require_once('C:\\Users\\solca\\...')
+#7 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php(7): require('C:\\Users\\solca\\...')
+#8 {main}
+  thrown in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\smdc-nature\templates\home-module\hero-section.php on line 1
+[02-Sep-2025 11:38:37 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function have_rows() in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\smdc-nature\templates\home-module\hero-section.php:1
+Stack trace:
+#0 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\smdc-nature\templates\home-template.php(7): include()
+#1 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\template.php(812): require('C:\\Users\\solca\\...')
+#2 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\template.php(745): load_template('C:\\Users\\solca\\...', false, Array)
+#3 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\general-template.php(206): locate_template(Array, true, false, Array)
+#4 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\smdc-nature\front-page.php(4): get_template_part('templates/home', 'template')
+#5 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\template-loader.php(106): include('C:\\Users\\solca\\...')
+#6 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-blog-header.php(19): require_once('C:\\Users\\solca\\...')
+#7 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php(7): require('C:\\Users\\solca\\...')
+#8 {main}
+  thrown in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\smdc-nature\templates\home-module\hero-section.php on line 1
