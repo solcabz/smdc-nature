@@ -1,3 +1,7 @@
+.property-wrapper{
+    margin: 40px 80px;
+}
+
 .featured-container {
     border-radius: 5px;
     margin: 40px 160px;
@@ -102,8 +106,8 @@
 /* Circle buttons */
 .swiper-footer .swiper-button-prev,
 .swiper-footer .swiper-button-next {
-    width: 32px;
-    height: 32px;
+    width: 40px;
+    height: 40px;
     background: #D36C2F;
     border-radius: 50%;
     display: flex;
@@ -111,6 +115,7 @@
     align-items: center;
     color: #fff;
     cursor: pointer;
+    padding: 8px;
     transition: background 0.3s ease;
 }
 
@@ -119,9 +124,12 @@
     background: #b95623;
 }
 
-/* Use smaller arrow icons */
-.swiper-button-prev::after,
-.swiper-button-next::after {
-    font-size: 8px;
-    font-weight: bold;
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    content: none !important; /* removes the built-in arrow */
+}
+
+.swiper-button-next svg,
+.swiper-button-prev svg {
+    fill: #fff;
 }
