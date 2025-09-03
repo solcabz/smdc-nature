@@ -32,9 +32,11 @@ body{
     font-family: "Cormorant Infant", serif;
     font-optical-sizing: auto;
     font-weight: 300;
+    color: #354637;
 }
 
 p{
     font-size: 20px;
     letter-spacing: 0.5px;
+    color: #354637;
 }

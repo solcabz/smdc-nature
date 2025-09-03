@@ -6,7 +6,7 @@
                     $video_avp = get_sub_field('video_avp');
                     $header_avp  = get_sub_field('header_avp');
                     $second_header_avp  = get_sub_field('second_header_avp');
-                    $sub_header  = get_sub_field('sub_header');
+                    $sub_header  = get_sub_field('subheader');
 
                     $video_url = '';
                     if (is_array($video_avp) && isset($video_avp['url'])) {
@@ -19,7 +19,7 @@
                 ?>
                 <div class="video-wrapper">
                     <div class="video-overlay">
-                        <h1 class="avp-title quote-title"><?php echo esc_html($header_avp); ?><span class="highlight quote-title"> <?php echo esc_html($second_header_avp); ?></span></h1>
+                        <h1 class="avp-title quote-title"><?php echo esc_html($header_avp); ?> <br><span class="highlight quote-title"> <?php echo esc_html($second_header_avp); ?></span></h1>
                         <p class="avp-sub-header"><?php echo esc_html($sub_header); ?></p>
                     </div>
                     <?php if ($video_url): ?>

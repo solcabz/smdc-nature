@@ -30,8 +30,8 @@ function handle_quote_form() {
         return;
     }
 
-    // reCAPTCHA check
-    $recaptcha_secret = "YOUR_SECRET_KEY";
+    // reCAPTCHA v3 check
+    $recaptcha_secret = getenv('RECAPTCHA_SECRET_KEY');
     $response = wp_remote_post(
         "https://www.google.com/recaptcha/api/siteverify",
         array(
@@ -44,7 +44,11 @@ function handle_quote_form() {
     );
 
     $response_body = json_decode(wp_remote_retrieve_body($response));
-    if (!$response_body->success) {
+    if (
+        !$response_body->success ||
+        $response_body->score < 0.5 || // adjust threshold as needed
+        $response_body->action !== 'submit'
+    ) {
         add_action('wp_footer', function() {
             echo "<script>
                 document.addEventListener('DOMContentLoaded', function() {
@@ -55,6 +59,7 @@ function handle_quote_form() {
         });
         return;
     }
+
 
     // Save to DB
     global $wpdb;

@@ -31,18 +31,24 @@
 .address-wrapper{
     text-align: center;
     width: 540px;
-    color: #FFFFFF;
     font-size: 18px ;
+}
+
+.address-wrapper p{
+    color: #FFFFFF;
 }
 
 .contact-wrapper{
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #FFFFFF;
     font-size: 18px ;
     gap: 1rem;
     text-decoration: none;
+}
+
+.contact-wrapper p{
+    color: #FFFFFF !important;
 }
  
 .contact-wrapper a{

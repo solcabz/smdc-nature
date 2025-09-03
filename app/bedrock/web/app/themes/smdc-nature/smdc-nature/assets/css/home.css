@@ -50,7 +50,7 @@
 }
 
 .video-wrapper{
-    margin: 20px 80px;
+    margin: 20px 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -74,7 +74,8 @@
 
 .avp-sub-header{
     text-align: center;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
+    line-height: 30px;
     font-size: 20px;
     margin: 2rem 0;
     width: 100%;
@@ -86,6 +87,15 @@
     border-radius: 20px;
 }
 
+.map-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin: 40px 160px;
+    padding: 80px 0;
+}
+
 .map-header, .map-counter{
     font-size: 80px;
     letter-spacing: -2px;
@@ -93,7 +103,111 @@
 }
 
 .map-counter .counter {
-  font-size: 120px;
+  font-size: 80px;
   display: inline-block;
-  margin-right: 8px;
+}
+
+.map-detail{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 6rem;
+}
+
+.map-text{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.map-text-bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+
+.map-image{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.map-container {
+  position: relative;
+  width: 720px;
+}
+
+.map-subheader{
+    text-align: left;
+    letter-spacing: 1px;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 2rem 0;
+    width: 389px;
+    color: #354637;
+}
+
+.map-text-top{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.legend-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    width: 180px;
+    margin-top: 8rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.legend-wrap a{
+    text-decoration: none;
+    color: #949494;
+    padding: 10px 0;
+    letter-spacing: 0.5px;
+    font-weight: 300;
+    font-size: 18px;
+    font-family: "HenrySans", sans-serif;
+}
+
+.explore-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.explore-btn a {
+    text-decoration: none;
+    color: #CF7525;
+    padding: 10px 0;
+    letter-spacing: 0.5px;
+    font-weight: 800;
+    font-size: 20px;
+    font-family: "HenrySans", sans-serif;
+    padding: 0;
+}
+
+.explore-btn svg {
+    width: 24px;
+    height: 24px;
+    fill: #CF7525;
+    font-weight: 800;
+    transition: transform 0.3s ease;
+    transform: translateX(0);
+}
+
+.explore-btn:hover svg {
+    transform: translateX(4px);
 }

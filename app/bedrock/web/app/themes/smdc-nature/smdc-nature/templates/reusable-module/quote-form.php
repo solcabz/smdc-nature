@@ -60,10 +60,8 @@
         <p for="consent">I agree to the collection of my data for quotation purposes.</p>
       </div>
 
-      <!-- reCAPTCHA -->
-      <div class="form-group">
-          <div class="g-recaptcha" data-sitekey="<?php echo esc_attr( getenv('GOOGLE_SITE_KEY') ); ?>"></div>
-      </div>
+      <!-- reCAPTCHA v3 (no visible widget) -->
+      <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
 
       <!-- Submit -->
       <button type="submit" name="submit_quote" class="submit-btn">Submit</button>
@@ -76,3 +74,16 @@
       <button id="close-quote-modal" >Close</button>
   </div>
 </div>
+
+<script src="https://www.google.com/recaptcha/api.js?render=<?php echo esc_attr( getenv('GOOGLE_SITE_KEY') ); ?>"></script>
+<script>
+document.getElementById('quote-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    grecaptcha.ready(function() {
+        grecaptcha.execute('<?php echo esc_attr( getenv('GOOGLE_SITE_KEY') ); ?>', {action: 'submit'}).then(function(token) {
+            document.getElementById('g-recaptcha-response').value = token;
+            e.target.submit();
+        });
+    });
+});
+</script>

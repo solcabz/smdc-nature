@@ -1,0 +1,117 @@
+/* Metro Manila */
+.ncr-info,
+.luzon-info,
+.visayas-info,
+.mindanao-info {
+    visibility: hidden;
+    fill: #949494;
+    paint-order: stroke fill markers;
+    opacity: 0;
+     transition: opacity 0.4s ease-in-out, visibility 0s linear 0.4s; /* delay visibility hide */
+}
+
+
+
+.cls-luzon-group:hover .luzon-info,
+.cls-visayas-group:hover .visayas-info,
+.cls-mindanao-group:hover .mindanao-info,
+.metro-group:hover .ncr-info {
+    visibility: visible;
+    opacity: 1;           /* fade in */
+    transition: opacity 0.4s ease-in-out, visibility 0s; /* show instantly */
+}
+
+.metro-group, .metro-legend, .cls-luzon-group, .luzon-legend, 
+.cls-visayas-group, .visayas-legend, .cls-mindanao-group, .mindanao-legend{
+    cursor:  pointer;
+}
+
+.cls-1 {
+    fill: #7ab336;
+}
+
+/* Metro manila */
+.cls-metro-manila:hover {
+    fill: #39a4ae;
+}
+
+/* Luzon */
+.cls-luzon-group:hover .cls-Luzon {
+    fill: #ffd17b;
+}
+
+/* Visayas */
+
+.cls-visayas-group:hover .cls-visayas{
+    fill: #e19250;
+}
+
+/* Mindanao */
+.cls-mindanao-group:hover  .cls-mindanao{
+    fill: #f28c8c;
+}
+
+.cls-1, .cls-2 {
+    stroke: #f9faf3;
+    stroke-miterlimit: 10;
+    stroke-width: .25px;
+}
+
+.cls-2 {
+    fill: #3d543c;
+}
+
+.cls-3 {
+    fill: #949494;
+}
+
+.text-cls {
+    font-family: 'HenrySans', 'sans-serif';
+    font-size: 9px;
+    width: 180px;
+    font-weight: 800;
+}
+
+.text-cls2 {
+    font-family: 'HenrySans', 'sans-serif';
+    font-size: 8px;
+    font-weight: 300;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-items: center;
+    gap: 15px;
+}
+
+/* legend */
+
+.cls-metro-manila-legend{
+    width: 12px;
+    height: 12px;
+    border-radius: 25px;
+    background-color: #39a4ae;
+}
+
+.cls-luzon-legend{
+    width: 12px;
+    height: 12px;
+    border-radius: 25px;
+    background-color: #ffd17b;
+}
+
+.cls-visayas-legend{
+    width: 12px;
+    height: 12px;
+    border-radius: 25px;
+    background-color: #e19250;
+}
+
+.cls-mindanao-legend{
+    width: 12px;
+    height: 12px;
+    border-radius: 25px;
+    background-color: #f28c8c;
+}
