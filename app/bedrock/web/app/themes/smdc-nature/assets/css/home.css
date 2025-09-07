@@ -6,7 +6,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 68px 60px ;
+    padding: 80px 60px ;
 }   
 
 .kv-wrapper {
@@ -92,7 +92,7 @@
     align-items: center;
     justify-content: center;
     gap: 3rem;
-    margin: 40px 160px;
+    margin: 80px 160px;
     padding: 80px 0;
 }
 

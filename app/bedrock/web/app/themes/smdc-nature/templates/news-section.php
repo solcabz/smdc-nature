@@ -1,7 +1,7 @@
 <section>
     <div class="news-wrapper">
         <div class="news-header">
-            <h1 class="quote-title"><?php echo esc_html(get_option('news_title')); ?> <span class="quote-title highlight" style="font-style: italic; font-weight: 500;"><?php echo esc_html(get_option('news_highlight')); ?></span> <?php echo esc_html(get_option('news_title2')); ?></h1>
+            <h1 class="quote-title"><?php echo esc_html(get_option('news_title')); ?> <span class="quote-title highlight" style="font-style: italic; font-weight: 400;"><?php echo esc_html(get_option('news_highlight')); ?></span> <?php echo esc_html(get_option('news_title2')); ?></h1>
             <p><?php echo wp_kses_post(get_option('news_blurb')); ?></p>
         </div>
         <div class="swiper mySwiper">

@@ -1,6 +1,6 @@
 .footer-wrapper{
     height: 100vh;
-    background: #3d543c;
+    background: #3D543C;
     padding: 80px 160px;
     display: flex;
     flex-direction: column;
@@ -30,12 +30,13 @@
 
 .address-wrapper{
     text-align: center;
-    width: 540px;
+    width: 640px;
     font-size: 18px ;
 }
 
 .address-wrapper p{
     color: #FFFFFF;
+    line-height: 20xp;
 }
 
 .contact-wrapper{

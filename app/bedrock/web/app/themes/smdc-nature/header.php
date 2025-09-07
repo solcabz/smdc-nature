@@ -48,21 +48,24 @@
       <!-- ✅ Close button -->
       <button class="close-menu" aria-label="Close Menu">&times;</button>
 
-      <div class="nav-logo">
-        <?php
-          $footer_image = get_theme_mod('footer_image');
-          if ($footer_image) : ?>
-            <a href="<?php echo home_url(); ?>">
-              <img src="<?php echo esc_url($footer_image); ?>" alt="Footer Image">
-            </a>
-        <?php endif; ?>
-      </div>
-
       <div class="menu-links">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Contact</a>
+         <?php
+          $menu = wp_nav_menu([
+            'theme_location' => 'primary',
+            'container'      => false,
+            'menu_class'     => 'link-lists',
+            'fallback_cb'    => false,
+            'echo'           => false
+          ]);
+
+          if ($menu) {
+            $menu = preg_replace('/<ul(.*?)>/', '<ul class="link-lists"$1>', $menu, 1);
+          } else {
+            $menu = '<ul class="link-lists"><li><a href="' . esc_url(home_url('/')) . '">Home</a></li></ul>';
+          }
+
+          echo $menu;
+        ?>
       </div>
 
       <div class="show-mobile">

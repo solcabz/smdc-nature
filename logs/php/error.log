@@ -354,3 +354,41 @@ Stack trace:
 [04-Sep-2025 14:21:07 UTC] PHP Warning:  Undefined variable $featured_banner in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\templates\reusable-module\property-card.php on line 9
 [04-Sep-2025 14:21:08 UTC] PHP Warning:  Undefined variable $featured_banner in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\templates\reusable-module\property-card.php on line 9
 [04-Sep-2025 14:21:08 UTC] PHP Warning:  Undefined variable $featured_banner in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\templates\reusable-module\property-card.php on line 9
+[05-Sep-2025 11:11:30 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\class-wp-customize-widgets.php on line 926
+[05-Sep-2025 11:13:06 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\class-wp-customize-widgets.php on line 926
+[06-Sep-2025 10:01:44 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\archive-good_life.php:42
+Stack trace:
+#0 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\template-loader.php(106): include()
+#1 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-blog-header.php(19): require_once('C:\\Users\\solca\\...')
+#2 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php(7): require('C:\\Users\\solca\\...')
+#3 {main}
+  thrown in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\archive-good_life.php on line 42
+[06-Sep-2025 10:01:50 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\archive-good_life.php:42
+Stack trace:
+#0 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\template-loader.php(106): include()
+#1 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-blog-header.php(19): require_once('C:\\Users\\solca\\...')
+#2 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php(7): require('C:\\Users\\solca\\...')
+#3 {main}
+  thrown in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\archive-good_life.php on line 42
+[06-Sep-2025 10:02:09 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\archive-good_life.php:42
+Stack trace:
+#0 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\template-loader.php(106): include()
+#1 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-blog-header.php(19): require_once('C:\\Users\\solca\\...')
+#2 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php(7): require('C:\\Users\\solca\\...')
+#3 {main}
+  thrown in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\archive-good_life.php on line 42
+[06-Sep-2025 10:03:31 UTC] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\archive-good_life.php:40
+Stack trace:
+#0 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\template-loader.php(106): include()
+#1 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-blog-header.php(19): require_once('C:\\Users\\solca\\...')
+#2 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php(7): require('C:\\Users\\solca\\...')
+#3 {main}
+  thrown in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\archive-good_life.php on line 40
+[07-Sep-2025 04:32:12 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function wp_kses(), 1 passed in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\archive-good_life.php on line 92 and at least 2 expected in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\kses.php:747
+Stack trace:
+#0 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\archive-good_life.php(92): wp_kses('SMDC Turf Resid...')
+#1 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\template-loader.php(106): include('C:\\Users\\solca\\...')
+#2 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-blog-header.php(19): require_once('C:\\Users\\solca\\...')
+#3 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php(7): require('C:\\Users\\solca\\...')
+#4 {main}
+  thrown in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\kses.php on line 747

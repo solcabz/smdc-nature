@@ -1,0 +1,42 @@
+/*
+    Theme Name: SMDC Nature old
+    Author: Sol Cabreza
+    Description: SMDC Segment Nature Theme
+    version: 1.0
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300..700;1,300..700&display=swap');
+
+@font-face {
+    font-family: 'HenrySans';
+    src: url('./assets/fonts/HENRYSANS-REGULAR.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: 'HenrySansLight';
+    src: url('./assets/fonts/HENRYSANS-LIGHT.TTF') format('truetype');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "HenrySansLight", sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f9faf3;
+}
+
+.quote-title {
+    font-family: "Cormorant Infant", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    color: #354637;
+}
+
+p{
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    color: #354637;
+}

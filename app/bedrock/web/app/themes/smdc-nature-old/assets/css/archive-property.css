@@ -1,0 +1,157 @@
+/* === Banner with fade === */
+
+.property-archive{
+    height: 688px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 68px 60px ;
+}
+
+.region-banner {
+    width: 100%;
+    height: 100%;
+    background-color: #314233;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 160px;
+    background-size: containcover;
+    background-position: center;
+    gap: 60px;
+    opacity: 1;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.region-banner.fade{
+    opacity: 0;
+}
+
+.overlay h1{
+    font-size: 80px;
+    line-height: 80px;
+    letter-spacing: -2px;
+    margin-bottom: 2rem;
+}
+
+.property-archive-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 200px ;
+}
+
+/* === Overlay stays readable === */
+.region-banner .overlay {
+    background: rgba(0,0,0,0.4);
+    color: white;
+    padding: 20px 40px;
+    border-radius: 8px;
+}
+
+/* === Property grid === */
+.region-tabs {
+    margin-bottom: 20px;
+}
+
+.region-button {
+    width: 240px;
+    height: 40px;
+    padding: 8px 16px;
+    margin-right: 5px;
+    border-radius: 20px 0 20px 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #D36C2F;
+    font: 20px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.region-button.active {
+    background: #D36C2F;
+    color: #ffffff;
+}
+
+.property-grid {
+    display: grid;
+    width: 100%;
+    min-height: 480px;
+    grid-template-columns: repeat(auto-fill,minmax(480px,1fr));
+    gap: 20px;
+    margin: 40px 20px;
+}
+
+/* === Property cards with fade/slide === */    
+.property-link{
+    text-decoration: none;
+}
+
+.property-card {
+    position: relative; /* allows absolute positioning inside */
+    background: #F6F1E1;
+    border: 1px solid #ddd;
+    color: #2b2b2b;
+    height: 480px;
+    padding: 20px;
+    border-radius: 20px;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.property-card img {
+    max-width: 100%;
+    height: 293px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.property-title{
+    font-style: medium;
+    font-size: 20px;
+    color: #314233;
+    width: 100%;
+    text-align: center;
+}
+
+.property-raw-detail{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.row-flex{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 2px;
+}
+
+.floating-arrow-right-l {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  background: #D2691E; /* circle background (same as your orange color) */
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.floating-arrow-right-l:hover {
+  background: #b85b1b; /* darker shade on hover */
+}
