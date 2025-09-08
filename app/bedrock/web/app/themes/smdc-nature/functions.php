@@ -77,3 +77,5 @@ require_once get_template_directory() . '/functions/footer-settings.php';
 require_once get_template_directory() . '/functions/property-archive.php';
 require_once get_template_directory() . '/functions/logo-settings.php';
 require_once get_template_directory() . '/functions/the-good-life.php';
+require_once get_template_directory() . '/functions/subs-settings.php';
+require_once get_template_directory() . '/functions/footer-subscriber.php';

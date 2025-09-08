@@ -1,4 +1,4 @@
-<section>
+<section class="featured-section">
     <?php if (have_rows('hero_module')): ?>
         <?php while (have_rows('hero_module')): the_row(); ?>
             <?php if (get_row_layout() == 'featured_property_section'): ?>

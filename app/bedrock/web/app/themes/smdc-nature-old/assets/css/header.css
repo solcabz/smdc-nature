@@ -194,16 +194,25 @@ body.menu-open .menu-backdrop {
 
 /* Menu links inside sidebar */
 .menu-links {
+  padding: 42px;
+  width: 100%;
+}
+
+.link-lists {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
-  padding: 42px;
   gap: 40px;
-  width: 100%;
 }
 
-.menu-links a {
+
+.link-lists li  {
+  list-style: none;
+}
+
+
+.link-lists li a {
   color: #354637;
   text-decoration: none;
   font-size: 40px;

@@ -1,10 +1,11 @@
 .news-wrapper{
-    margin: 80px 200px;
+    margin: 0 200px;
     text-align: center;
 }
 .news-header h1{
     font-size: 80px;
     margin-bottom: 15px;
+    letter-spacing: -2px;
 }
 
 .news-header p{
@@ -87,6 +88,8 @@
   font-weight: bold;
   letter-spacing: 0.5px;
   margin: 8px 0;
+  color: #354637;
+  margin-top: 16px;
 }
 
 .card-content a {
@@ -154,7 +157,7 @@
 
 .swiper-footer-news .swiper-button-prev:hover,
 .swiper-footer-news .swiper-button-next:hover {
-    background: #b95623;
+    background: #DE9A5E;
 }
 
 .swiper-button-next::after,
@@ -165,4 +168,8 @@
 .swiper-button-next svg,
 .swiper-button-prev svg {
     fill: #fff;
+}
+
+.article{
+  max-width: 480px;
 }

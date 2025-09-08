@@ -1,0 +1,62 @@
+.contact-page {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+.contact-hero {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.contact-hero h2 {
+  font-size: 2rem;
+}
+
+.contact-hero .highlight {
+  color: #d97141; /* Orange accent */
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.contact-info {
+  background: #f7f7f0;
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.btn-submit {
+  background: #d97141;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.contact-map {
+  margin-top: 2rem;
+}

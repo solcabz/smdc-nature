@@ -23,11 +23,20 @@
         <div class="footer-links">
             <div class="news-container">
                 <div class="news-form-wrapper">
-                    <form action="" >
-                        <input type="email" id="news-subscription" name="news-subscription" placeholder="Enter your email address" autocomplete="email" >
-                        <button>SUBMIT</button>
-                    </form> 
+                   <form method="POST" action="">
+                        <?php wp_nonce_field('subscribe_newsletter', 'newsletter_nonce'); ?>
+                        <input type="email" id="news-subscription" name="news_subscription" placeholder="Enter your email address" required>
+                        <button type="submit" name="submit_newsletter">SUBMIT</button>
+                    </form>
                     <p><?php echo esc_html(get_option('footer_newsletter')); ?></p>
+                    <!-- Newsletter Modal -->
+                    <div id="newsletter-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; 
+                        background:rgba(0,0,0,0.6); justify-content:center; align-items:center; z-index:9999;">
+                        <div style="background:#fff; padding:20px; border-radius:8px; max-width:400px; text-align:center;">
+                            <p id="newsletter-message"></p>
+                            <button onclick="document.getElementById('newsletter-modal').style.display='none'">Close</button>
+                        </div>
+                    </div>
                 </div>
                 <div class="footer-menu"></div>
             </div>
@@ -71,7 +80,12 @@
         
     </div>
 </footer>
-
+<script>
+    function showNewsletterModal(message) {
+        document.getElementById('newsletter-message').innerText = message;
+        document.getElementById('newsletter-modal').style.display = 'flex';
+    }
+</script>
 </body>
 <?php wp_footer(); ?>
 </html>

@@ -392,3 +392,382 @@ Stack trace:
 #3 C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php(7): require('C:\\Users\\solca\\...')
 #4 {main}
   thrown in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\kses.php on line 747
+[08-Sep-2025 12:31:41 UTC] WordPress database error Table 'local.wp_subscribers' doesn't exist for query SELECT COUNT(*) FROM wp_subscribers WHERE email = 'solomon.cabreza@smdevelopment.com' made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), do_action('template_redirect'), WP_Hook->do_action, WP_Hook->apply_filters, handle_news_subscription
+[08-Sep-2025 12:31:41 UTC] WordPress database error Table 'local.wp_subscribers' doesn't exist for query SHOW FULL COLUMNS FROM `wp_subscribers` made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), do_action('template_redirect'), WP_Hook->do_action, WP_Hook->apply_filters, handle_news_subscription
+[08-Sep-2025 12:31:42 UTC] WordPress database error Table 'local.wp_subscribers' doesn't exist for query SELECT COUNT(*) FROM wp_subscribers WHERE email = 'solomon.cabreza@smdevelopment.com' made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), do_action('template_redirect'), WP_Hook->do_action, WP_Hook->apply_filters, handle_news_subscription
+[08-Sep-2025 12:31:42 UTC] WordPress database error Table 'local.wp_subscribers' doesn't exist for query SHOW FULL COLUMNS FROM `wp_subscribers` made by require('wp-blog-header.php'), require_once('wp-includes/template-loader.php'), do_action('template_redirect'), WP_Hook->do_action, WP_Hook->apply_filters, handle_news_subscription
+[08-Sep-2025 12:32:03 UTC] WordPress database error Table 'local.wp_subscribers' doesn't exist for query SELECT * FROM wp_subscribers ORDER BY created_at DESC LIMIT 10 OFFSET 0 made by do_action('toplevel_page_subscribers-list'), WP_Hook->do_action, WP_Hook->apply_filters, render_subscribers_page
+[08-Sep-2025 12:32:03 UTC] WordPress database error Table 'local.wp_subscribers' doesn't exist for query SELECT COUNT(*) FROM wp_subscribers made by do_action('toplevel_page_subscribers-list'), WP_Hook->do_action, WP_Hook->apply_filters, render_subscribers_page
+[08-Sep-2025 12:32:10 UTC] WordPress database error Table 'local.wp_subscribers' doesn't exist for query SELECT * FROM wp_subscribers ORDER BY created_at DESC LIMIT 10 OFFSET 0 made by do_action('toplevel_page_subscribers-list'), WP_Hook->do_action, WP_Hook->apply_filters, render_subscribers_page
+[08-Sep-2025 12:32:10 UTC] WordPress database error Table 'local.wp_subscribers' doesn't exist for query SELECT COUNT(*) FROM wp_subscribers made by do_action('toplevel_page_subscribers-list'), WP_Hook->do_action, WP_Hook->apply_filters, render_subscribers_page
+[08-Sep-2025 12:32:49 UTC] WordPress database error Table 'local.wp_subscribers' doesn't exist for query SELECT * FROM wp_subscribers ORDER BY created_at DESC LIMIT 10 OFFSET 0 made by do_action('toplevel_page_subscribers-list'), WP_Hook->do_action, WP_Hook->apply_filters, render_subscribers_page
+[08-Sep-2025 12:32:49 UTC] WordPress database error Table 'local.wp_subscribers' doesn't exist for query SELECT COUNT(*) FROM wp_subscribers made by do_action('toplevel_page_subscribers-list'), WP_Hook->do_action, WP_Hook->apply_filters, render_subscribers_page
+[08-Sep-2025 12:45:00 UTC] WordPress database error Table 'local.wp_subscribers' doesn't exist for query SELECT * FROM wp_subscribers ORDER BY created_at DESC LIMIT 10 OFFSET 0 made by do_action('toplevel_page_subscribers-list'), WP_Hook->do_action, WP_Hook->apply_filters, render_subscribers_page
+[08-Sep-2025 12:45:00 UTC] WordPress database error Table 'local.wp_subscribers' doesn't exist for query SELECT COUNT(*) FROM wp_subscribers made by do_action('toplevel_page_subscribers-list'), WP_Hook->do_action, WP_Hook->apply_filters, render_subscribers_page
+[08-Sep-2025 12:49:26 UTC] PHP Fatal error:  Cannot redeclare function register_good_life_post_type() (previously declared in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\functions\the-good-life.php:5) in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\functions\good-life.php on line 5
+[08-Sep-2025 12:49:26 UTC] PHP Stack trace:
+[08-Sep-2025 12:49:26 UTC] PHP   1. {main}() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-admin\admin-ajax.php:0
+[08-Sep-2025 12:49:26 UTC] PHP   2. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-admin\admin-ajax.php:22
+[08-Sep-2025 12:49:26 UTC] PHP   3. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-load.php:55
+[08-Sep-2025 12:49:26 UTC] PHP   4. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\wp-config.php:10
+[08-Sep-2025 12:49:26 UTC] PHP   5. include() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-settings.php:695
+[08-Sep-2025 12:49:26 UTC] PHP Warning:  Trying to access array offset on false in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\class-wp-recovery-mode-email-service.php on line 367
+[08-Sep-2025 12:49:26 UTC] PHP Stack trace:
+[08-Sep-2025 12:49:26 UTC] PHP   1. WP_Fatal_Error_Handler->handle() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\class-wp-fatal-error-handler.php:0
+[08-Sep-2025 12:49:26 UTC] PHP   2. WP_Recovery_Mode->handle_error($error = ['type' => 64, 'message' => 'Cannot redeclare function register_good_life_post_type() (previously declared in C:\\Users\\solca\\Local Sites\\smdcnature\\app\\bedrock\\web\\app\\themes\\smdc-nature\\functions\\the-good-life.php:5)', 'file' => 'C:\\Users\\solca\\Local Sites\\smdcnature\\app\\bedrock\\web\\app\\themes\\smdc-nature\\functions\\good-life.php', 'line' => 5]) C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\class-wp-fatal-error-handler.php:55
+[08-Sep-2025 12:49:26 UTC] PHP   3. WP_Recovery_Mode_Email_Service->maybe_send_recovery_mode_email($rate_limit = 86400, $error = ['type' => 64, 'message' => 'Cannot redeclare function register_good_life_post_type() (previously declared in C:\\Users\\solca\\Local Sites\\smdcnature\\app\\bedrock\\web\\app\\themes\\smdc-nature\\functions\\the-good-life.php:5)', 'file' => 'C:\\Users\\solca\\Local Sites\\smdcnature\\app\\bedrock\\web\\app\\themes\\smdc-nature\\functions\\good-life.php', 'line' => 5], $extension = ['type' => 'theme', 'slug' => 'smdc-nature']) C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\class-wp-recovery-mode.php:185
+[08-Sep-2025 12:49:26 UTC] PHP   4. WP_Recovery_Mode_Email_Service->send_recovery_mode_email($rate_limit = 86400, $error = ['type' => 64, 'message' => 'Cannot redeclare function register_good_life_post_type() (previously declared in C:\\Users\\solca\\Local Sites\\smdcnature\\app\\bedrock\\web\\app\\themes\\smdc-nature\\functions\\the-good-life.php:5)', 'file' => 'C:\\Users\\solca\\Local Sites\\smdcnature\\app\\bedrock\\web\\app\\themes\\smdc-nature\\functions\\good-life.php', 'line' => 5], $extension = ['type' => 'theme', 'slug' => 'smdc-nature']) C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\class-wp-recovery-mode-email-service.php:62
+[08-Sep-2025 12:49:26 UTC] PHP   5. WP_Recovery_Mode_Email_Service->get_debug($extension = ['type' => 'theme', 'slug' => 'smdc-nature']) C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\class-wp-recovery-mode-email-service.php:150
+[08-Sep-2025 12:49:26 UTC] PHP Warning:  Trying to access array offset on false in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\class-wp-recovery-mode-email-service.php on line 368
+[08-Sep-2025 12:49:26 UTC] PHP Stack trace:
+[08-Sep-2025 12:49:26 UTC] PHP   1. WP_Fatal_Error_Handler->handle() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\class-wp-fatal-error-handler.php:0
+[08-Sep-2025 12:49:26 UTC] PHP   2. WP_Recovery_Mode->handle_error($error = ['type' => 64, 'message' => 'Cannot redeclare function register_good_life_post_type() (previously declared in C:\\Users\\solca\\Local Sites\\smdcnature\\app\\bedrock\\web\\app\\themes\\smdc-nature\\functions\\the-good-life.php:5)', 'file' => 'C:\\Users\\solca\\Local Sites\\smdcnature\\app\\bedrock\\web\\app\\themes\\smdc-nature\\functions\\good-life.php', 'line' => 5]) C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\class-wp-fatal-error-handler.php:55
+[08-Sep-2025 12:49:26 UTC] PHP   3. WP_Recovery_Mode_Email_Service->maybe_send_recovery_mode_email($rate_limit = 86400, $error = ['type' => 64, 'message' => 'Cannot redeclare function register_good_life_post_type() (previously declared in C:\\Users\\solca\\Local Sites\\smdcnature\\app\\bedrock\\web\\app\\themes\\smdc-nature\\functions\\the-good-life.php:5)', 'file' => 'C:\\Users\\solca\\Local Sites\\smdcnature\\app\\bedrock\\web\\app\\themes\\smdc-nature\\functions\\good-life.php', 'line' => 5], $extension = ['type' => 'theme', 'slug' => 'smdc-nature']) C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\class-wp-recovery-mode.php:185
+[08-Sep-2025 12:49:26 UTC] PHP   4. WP_Recovery_Mode_Email_Service->send_recovery_mode_email($rate_limit = 86400, $error = ['type' => 64, 'message' => 'Cannot redeclare function register_good_life_post_type() (previously declared in C:\\Users\\solca\\Local Sites\\smdcnature\\app\\bedrock\\web\\app\\themes\\smdc-nature\\functions\\the-good-life.php:5)', 'file' => 'C:\\Users\\solca\\Local Sites\\smdcnature\\app\\bedrock\\web\\app\\themes\\smdc-nature\\functions\\good-life.php', 'line' => 5], $extension = ['type' => 'theme', 'slug' => 'smdc-nature']) C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\class-wp-recovery-mode-email-service.php:62
+[08-Sep-2025 12:49:26 UTC] PHP   5. WP_Recovery_Mode_Email_Service->get_debug($extension = ['type' => 'theme', 'slug' => 'smdc-nature']) C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\class-wp-recovery-mode-email-service.php:150
+[08-Sep-2025 12:49:27 UTC] PHP Fatal error:  Cannot redeclare function register_good_life_post_type() (previously declared in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\functions\the-good-life.php:5) in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\functions\good-life.php on line 5
+[08-Sep-2025 12:49:27 UTC] PHP Stack trace:
+[08-Sep-2025 12:49:27 UTC] PHP   1. {main}() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-admin\admin.php:0
+[08-Sep-2025 12:49:27 UTC] PHP   2. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-admin\admin.php:35
+[08-Sep-2025 12:49:27 UTC] PHP   3. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-load.php:55
+[08-Sep-2025 12:49:27 UTC] PHP   4. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\wp-config.php:10
+[08-Sep-2025 12:49:27 UTC] PHP   5. include() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-settings.php:695
+[08-Sep-2025 12:49:30 UTC] PHP Fatal error:  Cannot redeclare function register_good_life_post_type() (previously declared in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\functions\the-good-life.php:5) in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\functions\good-life.php on line 5
+[08-Sep-2025 12:49:30 UTC] PHP Stack trace:
+[08-Sep-2025 12:49:30 UTC] PHP   1. {main}() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php:0
+[08-Sep-2025 12:49:30 UTC] PHP   2. require() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php:7
+[08-Sep-2025 12:49:30 UTC] PHP   3. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-blog-header.php:13
+[08-Sep-2025 12:49:30 UTC] PHP   4. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-load.php:55
+[08-Sep-2025 12:49:30 UTC] PHP   5. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\wp-config.php:10
+[08-Sep-2025 12:49:30 UTC] PHP   6. include() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-settings.php:695
+[08-Sep-2025 12:49:36 UTC] PHP Fatal error:  Cannot redeclare function register_good_life_post_type() (previously declared in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\functions\the-good-life.php:5) in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\functions\good-life.php on line 5
+[08-Sep-2025 12:49:36 UTC] PHP Stack trace:
+[08-Sep-2025 12:49:36 UTC] PHP   1. {main}() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-admin\about.php:0
+[08-Sep-2025 12:49:36 UTC] PHP   2. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-admin\about.php:10
+[08-Sep-2025 12:49:36 UTC] PHP   3. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-admin\admin.php:35
+[08-Sep-2025 12:49:36 UTC] PHP   4. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-load.php:55
+[08-Sep-2025 12:49:36 UTC] PHP   5. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\wp-config.php:10
+[08-Sep-2025 12:49:36 UTC] PHP   6. include() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-settings.php:695
+[08-Sep-2025 12:49:38 UTC] PHP Fatal error:  Cannot redeclare function register_good_life_post_type() (previously declared in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\functions\the-good-life.php:5) in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\functions\good-life.php on line 5
+[08-Sep-2025 12:49:38 UTC] PHP Stack trace:
+[08-Sep-2025 12:49:38 UTC] PHP   1. {main}() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php:0
+[08-Sep-2025 12:49:38 UTC] PHP   2. require() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php:7
+[08-Sep-2025 12:49:38 UTC] PHP   3. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-blog-header.php:13
+[08-Sep-2025 12:49:38 UTC] PHP   4. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-load.php:55
+[08-Sep-2025 12:49:38 UTC] PHP   5. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\wp-config.php:10
+[08-Sep-2025 12:49:38 UTC] PHP   6. include() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-settings.php:695
+[08-Sep-2025 12:49:41 UTC] PHP Fatal error:  Cannot redeclare function register_good_life_post_type() (previously declared in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\functions\the-good-life.php:5) in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\functions\good-life.php on line 5
+[08-Sep-2025 12:49:41 UTC] PHP Stack trace:
+[08-Sep-2025 12:49:41 UTC] PHP   1. {main}() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-admin\index.php:0
+[08-Sep-2025 12:49:41 UTC] PHP   2. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-admin\index.php:10
+[08-Sep-2025 12:49:41 UTC] PHP   3. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-admin\admin.php:35
+[08-Sep-2025 12:49:41 UTC] PHP   4. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-load.php:55
+[08-Sep-2025 12:49:41 UTC] PHP   5. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\wp-config.php:10
+[08-Sep-2025 12:49:41 UTC] PHP   6. include() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-settings.php:695
+[08-Sep-2025 12:49:44 UTC] PHP Fatal error:  Cannot redeclare function register_good_life_post_type() (previously declared in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\functions\the-good-life.php:5) in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\functions\good-life.php on line 5
+[08-Sep-2025 12:49:44 UTC] PHP Stack trace:
+[08-Sep-2025 12:49:44 UTC] PHP   1. {main}() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-admin\index.php:0
+[08-Sep-2025 12:49:44 UTC] PHP   2. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-admin\index.php:10
+[08-Sep-2025 12:49:44 UTC] PHP   3. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-admin\admin.php:35
+[08-Sep-2025 12:49:44 UTC] PHP   4. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-load.php:55
+[08-Sep-2025 12:49:44 UTC] PHP   5. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\wp-config.php:10
+[08-Sep-2025 12:49:44 UTC] PHP   6. include() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-settings.php:695
+[08-Sep-2025 12:49:46 UTC] PHP Fatal error:  Cannot redeclare function register_good_life_post_type() (previously declared in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\functions\the-good-life.php:5) in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\functions\good-life.php on line 5
+[08-Sep-2025 12:49:46 UTC] PHP Stack trace:
+[08-Sep-2025 12:49:46 UTC] PHP   1. {main}() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php:0
+[08-Sep-2025 12:49:46 UTC] PHP   2. require() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php:7
+[08-Sep-2025 12:49:46 UTC] PHP   3. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-blog-header.php:13
+[08-Sep-2025 12:49:46 UTC] PHP   4. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-load.php:55
+[08-Sep-2025 12:49:46 UTC] PHP   5. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\wp-config.php:10
+[08-Sep-2025 12:49:46 UTC] PHP   6. include() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-settings.php:695
+[08-Sep-2025 12:49:53 UTC] PHP Fatal error:  Cannot redeclare function register_good_life_post_type() (previously declared in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\functions\the-good-life.php:5) in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\functions\good-life.php on line 5
+[08-Sep-2025 12:49:53 UTC] PHP Stack trace:
+[08-Sep-2025 12:49:53 UTC] PHP   1. {main}() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-admin\about.php:0
+[08-Sep-2025 12:49:53 UTC] PHP   2. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-admin\about.php:10
+[08-Sep-2025 12:49:53 UTC] PHP   3. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-admin\admin.php:35
+[08-Sep-2025 12:49:53 UTC] PHP   4. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-load.php:55
+[08-Sep-2025 12:49:53 UTC] PHP   5. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\wp-config.php:10
+[08-Sep-2025 12:49:53 UTC] PHP   6. include() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-settings.php:695
+[08-Sep-2025 12:49:55 UTC] PHP Fatal error:  Cannot redeclare function register_good_life_post_type() (previously declared in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\functions\the-good-life.php:5) in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\functions\good-life.php on line 5
+[08-Sep-2025 12:49:55 UTC] PHP Stack trace:
+[08-Sep-2025 12:49:55 UTC] PHP   1. {main}() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php:0
+[08-Sep-2025 12:49:55 UTC] PHP   2. require() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php:7
+[08-Sep-2025 12:49:55 UTC] PHP   3. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-blog-header.php:13
+[08-Sep-2025 12:49:55 UTC] PHP   4. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-load.php:55
+[08-Sep-2025 12:49:55 UTC] PHP   5. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\wp-config.php:10
+[08-Sep-2025 12:49:55 UTC] PHP   6. include() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-settings.php:695
+[08-Sep-2025 12:50:16 UTC] PHP Fatal error:  Cannot redeclare function register_good_life_post_type() (previously declared in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\functions\the-good-life.php:5) in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\functions\good-life.php on line 5
+[08-Sep-2025 12:50:16 UTC] PHP Stack trace:
+[08-Sep-2025 12:50:16 UTC] PHP   1. {main}() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-admin\index.php:0
+[08-Sep-2025 12:50:16 UTC] PHP   2. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-admin\index.php:10
+[08-Sep-2025 12:50:16 UTC] PHP   3. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-admin\admin.php:35
+[08-Sep-2025 12:50:16 UTC] PHP   4. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-load.php:55
+[08-Sep-2025 12:50:16 UTC] PHP   5. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\wp-config.php:10
+[08-Sep-2025 12:50:16 UTC] PHP   6. include() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-settings.php:695
+[08-Sep-2025 12:50:17 UTC] PHP Fatal error:  Cannot redeclare function register_good_life_post_type() (previously declared in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\functions\the-good-life.php:5) in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\functions\good-life.php on line 5
+[08-Sep-2025 12:50:17 UTC] PHP Stack trace:
+[08-Sep-2025 12:50:17 UTC] PHP   1. {main}() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-admin\about.php:0
+[08-Sep-2025 12:50:17 UTC] PHP   2. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-admin\about.php:10
+[08-Sep-2025 12:50:17 UTC] PHP   3. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-admin\admin.php:35
+[08-Sep-2025 12:50:17 UTC] PHP   4. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-load.php:55
+[08-Sep-2025 12:50:17 UTC] PHP   5. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\wp-config.php:10
+[08-Sep-2025 12:50:17 UTC] PHP   6. include() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-settings.php:695
+[08-Sep-2025 12:50:19 UTC] PHP Fatal error:  Cannot redeclare function register_good_life_post_type() (previously declared in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\functions\the-good-life.php:5) in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\functions\good-life.php on line 5
+[08-Sep-2025 12:50:19 UTC] PHP Stack trace:
+[08-Sep-2025 12:50:19 UTC] PHP   1. {main}() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php:0
+[08-Sep-2025 12:50:19 UTC] PHP   2. require() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php:7
+[08-Sep-2025 12:50:19 UTC] PHP   3. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-blog-header.php:13
+[08-Sep-2025 12:50:19 UTC] PHP   4. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-load.php:55
+[08-Sep-2025 12:50:19 UTC] PHP   5. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\wp-config.php:10
+[08-Sep-2025 12:50:19 UTC] PHP   6. include() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-settings.php:695
+[08-Sep-2025 12:50:23 UTC] PHP Fatal error:  Cannot redeclare function register_good_life_post_type() (previously declared in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\functions\the-good-life.php:5) in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\functions\good-life.php on line 5
+[08-Sep-2025 12:50:23 UTC] PHP Stack trace:
+[08-Sep-2025 12:50:23 UTC] PHP   1. {main}() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-admin\index.php:0
+[08-Sep-2025 12:50:23 UTC] PHP   2. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-admin\index.php:10
+[08-Sep-2025 12:50:23 UTC] PHP   3. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-admin\admin.php:35
+[08-Sep-2025 12:50:23 UTC] PHP   4. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-load.php:55
+[08-Sep-2025 12:50:23 UTC] PHP   5. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\wp-config.php:10
+[08-Sep-2025 12:50:23 UTC] PHP   6. include() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-settings.php:695
+[08-Sep-2025 12:50:25 UTC] PHP Fatal error:  Cannot redeclare function register_good_life_post_type() (previously declared in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\functions\the-good-life.php:5) in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\functions\good-life.php on line 5
+[08-Sep-2025 12:50:25 UTC] PHP Stack trace:
+[08-Sep-2025 12:50:25 UTC] PHP   1. {main}() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-admin\index.php:0
+[08-Sep-2025 12:50:25 UTC] PHP   2. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-admin\index.php:10
+[08-Sep-2025 12:50:25 UTC] PHP   3. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-admin\admin.php:35
+[08-Sep-2025 12:50:25 UTC] PHP   4. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-load.php:55
+[08-Sep-2025 12:50:25 UTC] PHP   5. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\wp-config.php:10
+[08-Sep-2025 12:50:25 UTC] PHP   6. include() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-settings.php:695
+[08-Sep-2025 12:50:28 UTC] PHP Fatal error:  Cannot redeclare function register_good_life_post_type() (previously declared in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\functions\the-good-life.php:5) in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\functions\good-life.php on line 5
+[08-Sep-2025 12:50:28 UTC] PHP Stack trace:
+[08-Sep-2025 12:50:28 UTC] PHP   1. {main}() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php:0
+[08-Sep-2025 12:50:28 UTC] PHP   2. require() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php:7
+[08-Sep-2025 12:50:28 UTC] PHP   3. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-blog-header.php:13
+[08-Sep-2025 12:50:28 UTC] PHP   4. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-load.php:55
+[08-Sep-2025 12:50:28 UTC] PHP   5. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\wp-config.php:10
+[08-Sep-2025 12:50:28 UTC] PHP   6. include() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-settings.php:695
+[08-Sep-2025 12:50:32 UTC] PHP Fatal error:  Cannot redeclare function register_good_life_post_type() (previously declared in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\functions\the-good-life.php:5) in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\functions\good-life.php on line 5
+[08-Sep-2025 12:50:32 UTC] PHP Stack trace:
+[08-Sep-2025 12:50:32 UTC] PHP   1. {main}() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php:0
+[08-Sep-2025 12:50:32 UTC] PHP   2. require() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php:7
+[08-Sep-2025 12:50:32 UTC] PHP   3. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-blog-header.php:13
+[08-Sep-2025 12:50:32 UTC] PHP   4. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-load.php:55
+[08-Sep-2025 12:50:32 UTC] PHP   5. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\wp-config.php:10
+[08-Sep-2025 12:50:32 UTC] PHP   6. include() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-settings.php:695
+[08-Sep-2025 12:50:34 UTC] PHP Fatal error:  Cannot redeclare function register_good_life_post_type() (previously declared in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\functions\the-good-life.php:5) in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\functions\good-life.php on line 5
+[08-Sep-2025 12:50:34 UTC] PHP Stack trace:
+[08-Sep-2025 12:50:34 UTC] PHP   1. {main}() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php:0
+[08-Sep-2025 12:50:34 UTC] PHP   2. require() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php:7
+[08-Sep-2025 12:50:34 UTC] PHP   3. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-blog-header.php:13
+[08-Sep-2025 12:50:34 UTC] PHP   4. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-load.php:55
+[08-Sep-2025 12:50:34 UTC] PHP   5. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\wp-config.php:10
+[08-Sep-2025 12:50:34 UTC] PHP   6. include() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-settings.php:695
+[08-Sep-2025 12:50:47 UTC] PHP Fatal error:  Cannot redeclare function register_good_life_post_type() (previously declared in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\functions\the-good-life.php:5) in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\functions\good-life.php on line 5
+[08-Sep-2025 12:50:47 UTC] PHP Stack trace:
+[08-Sep-2025 12:50:47 UTC] PHP   1. {main}() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php:0
+[08-Sep-2025 12:50:47 UTC] PHP   2. require() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php:7
+[08-Sep-2025 12:50:47 UTC] PHP   3. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-blog-header.php:13
+[08-Sep-2025 12:50:47 UTC] PHP   4. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-load.php:55
+[08-Sep-2025 12:50:47 UTC] PHP   5. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\wp-config.php:10
+[08-Sep-2025 12:50:47 UTC] PHP   6. include() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-settings.php:695
+[08-Sep-2025 12:50:47 UTC] PHP Fatal error:  Cannot redeclare function register_good_life_post_type() (previously declared in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\functions\the-good-life.php:5) in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\functions\good-life.php on line 5
+[08-Sep-2025 12:50:47 UTC] PHP Stack trace:
+[08-Sep-2025 12:50:47 UTC] PHP   1. {main}() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-admin\admin-ajax.php:0
+[08-Sep-2025 12:50:47 UTC] PHP   2. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-admin\admin-ajax.php:22
+[08-Sep-2025 12:50:47 UTC] PHP   3. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-load.php:55
+[08-Sep-2025 12:50:47 UTC] PHP   4. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\wp-config.php:10
+[08-Sep-2025 12:50:47 UTC] PHP   5. include() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-settings.php:695
+[08-Sep-2025 12:50:50 UTC] PHP Fatal error:  Cannot redeclare function register_good_life_post_type() (previously declared in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\functions\the-good-life.php:5) in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\functions\good-life.php on line 5
+[08-Sep-2025 12:50:50 UTC] PHP Stack trace:
+[08-Sep-2025 12:50:50 UTC] PHP   1. {main}() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php:0
+[08-Sep-2025 12:50:50 UTC] PHP   2. require() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php:7
+[08-Sep-2025 12:50:50 UTC] PHP   3. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-blog-header.php:13
+[08-Sep-2025 12:50:50 UTC] PHP   4. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-load.php:55
+[08-Sep-2025 12:50:50 UTC] PHP   5. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\wp-config.php:10
+[08-Sep-2025 12:50:50 UTC] PHP   6. include() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-settings.php:695
+[08-Sep-2025 12:50:56 UTC] PHP Fatal error:  Cannot redeclare function register_good_life_post_type() (previously declared in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\functions\the-good-life.php:5) in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\functions\good-life.php on line 5
+[08-Sep-2025 12:50:56 UTC] PHP Stack trace:
+[08-Sep-2025 12:50:56 UTC] PHP   1. {main}() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php:0
+[08-Sep-2025 12:50:56 UTC] PHP   2. require() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php:7
+[08-Sep-2025 12:50:56 UTC] PHP   3. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-blog-header.php:13
+[08-Sep-2025 12:50:56 UTC] PHP   4. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-load.php:55
+[08-Sep-2025 12:50:56 UTC] PHP   5. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\wp-config.php:10
+[08-Sep-2025 12:50:56 UTC] PHP   6. include() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-settings.php:695
+[08-Sep-2025 12:50:59 UTC] PHP Fatal error:  Cannot redeclare function register_good_life_post_type() (previously declared in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\functions\the-good-life.php:5) in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\functions\good-life.php on line 5
+[08-Sep-2025 12:50:59 UTC] PHP Stack trace:
+[08-Sep-2025 12:50:59 UTC] PHP   1. {main}() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php:0
+[08-Sep-2025 12:50:59 UTC] PHP   2. require() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php:7
+[08-Sep-2025 12:50:59 UTC] PHP   3. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-blog-header.php:13
+[08-Sep-2025 12:50:59 UTC] PHP   4. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-load.php:55
+[08-Sep-2025 12:50:59 UTC] PHP   5. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\wp-config.php:10
+[08-Sep-2025 12:50:59 UTC] PHP   6. include() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-settings.php:695
+[08-Sep-2025 12:53:53 UTC] PHP Fatal error:  Cannot redeclare function register_good_life_post_type() (previously declared in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\functions\the-good-life.php:5) in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\functions\subs-settings.php on line 5
+[08-Sep-2025 12:53:53 UTC] PHP Stack trace:
+[08-Sep-2025 12:53:53 UTC] PHP   1. {main}() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-admin\admin-ajax.php:0
+[08-Sep-2025 12:53:53 UTC] PHP   2. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-admin\admin-ajax.php:22
+[08-Sep-2025 12:53:53 UTC] PHP   3. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-load.php:55
+[08-Sep-2025 12:53:53 UTC] PHP   4. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\wp-config.php:10
+[08-Sep-2025 12:53:53 UTC] PHP   5. include() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-settings.php:695
+[08-Sep-2025 12:54:12 UTC] PHP Fatal error:  Cannot redeclare function register_good_life_post_type() (previously declared in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\functions\the-good-life.php:5) in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\functions\subs-settings.php on line 5
+[08-Sep-2025 12:54:12 UTC] PHP Stack trace:
+[08-Sep-2025 12:54:12 UTC] PHP   1. {main}() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-admin\index.php:0
+[08-Sep-2025 12:54:12 UTC] PHP   2. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-admin\index.php:10
+[08-Sep-2025 12:54:12 UTC] PHP   3. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-admin\admin.php:35
+[08-Sep-2025 12:54:12 UTC] PHP   4. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-load.php:55
+[08-Sep-2025 12:54:12 UTC] PHP   5. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\wp-config.php:10
+[08-Sep-2025 12:54:12 UTC] PHP   6. include() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-settings.php:695
+[08-Sep-2025 12:54:14 UTC] PHP Fatal error:  Cannot redeclare function register_good_life_post_type() (previously declared in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\functions\the-good-life.php:5) in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\functions\subs-settings.php on line 5
+[08-Sep-2025 12:54:14 UTC] PHP Stack trace:
+[08-Sep-2025 12:54:14 UTC] PHP   1. {main}() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php:0
+[08-Sep-2025 12:54:14 UTC] PHP   2. require() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php:7
+[08-Sep-2025 12:54:14 UTC] PHP   3. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-blog-header.php:13
+[08-Sep-2025 12:54:14 UTC] PHP   4. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-load.php:55
+[08-Sep-2025 12:54:14 UTC] PHP   5. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\wp-config.php:10
+[08-Sep-2025 12:54:14 UTC] PHP   6. include() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-settings.php:695
+[08-Sep-2025 12:54:40 UTC] PHP Fatal error:  Cannot redeclare function register_good_life_post_type() (previously declared in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\functions\the-good-life.php:5) in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\functions\subs-settings.php on line 5
+[08-Sep-2025 12:54:40 UTC] PHP Stack trace:
+[08-Sep-2025 12:54:40 UTC] PHP   1. {main}() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php:0
+[08-Sep-2025 12:54:40 UTC] PHP   2. require() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php:7
+[08-Sep-2025 12:54:40 UTC] PHP   3. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-blog-header.php:13
+[08-Sep-2025 12:54:40 UTC] PHP   4. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-load.php:55
+[08-Sep-2025 12:54:40 UTC] PHP   5. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\wp-config.php:10
+[08-Sep-2025 12:54:40 UTC] PHP   6. include() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-settings.php:695
+[08-Sep-2025 12:54:42 UTC] PHP Fatal error:  Cannot redeclare function register_good_life_post_type() (previously declared in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\functions\the-good-life.php:5) in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\functions\subs-settings.php on line 5
+[08-Sep-2025 12:54:42 UTC] PHP Stack trace:
+[08-Sep-2025 12:54:42 UTC] PHP   1. {main}() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php:0
+[08-Sep-2025 12:54:42 UTC] PHP   2. require() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php:7
+[08-Sep-2025 12:54:42 UTC] PHP   3. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-blog-header.php:13
+[08-Sep-2025 12:54:42 UTC] PHP   4. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-load.php:55
+[08-Sep-2025 12:54:42 UTC] PHP   5. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\wp-config.php:10
+[08-Sep-2025 12:54:42 UTC] PHP   6. include() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-settings.php:695
+[08-Sep-2025 12:54:49 UTC] PHP Fatal error:  Cannot redeclare function register_good_life_post_type() (previously declared in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\functions\the-good-life.php:5) in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\functions\subs-settings.php on line 5
+[08-Sep-2025 12:54:49 UTC] PHP Stack trace:
+[08-Sep-2025 12:54:49 UTC] PHP   1. {main}() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-admin\admin-ajax.php:0
+[08-Sep-2025 12:54:49 UTC] PHP   2. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-admin\admin-ajax.php:22
+[08-Sep-2025 12:54:49 UTC] PHP   3. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-load.php:55
+[08-Sep-2025 12:54:49 UTC] PHP   4. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\wp-config.php:10
+[08-Sep-2025 12:54:49 UTC] PHP   5. include() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-settings.php:695
+[08-Sep-2025 12:56:50 UTC] PHP Fatal error:  Cannot redeclare function register_good_life_post_type() (previously declared in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\functions\the-good-life.php:5) in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\functions\subs-settings.php on line 5
+[08-Sep-2025 12:56:50 UTC] PHP Stack trace:
+[08-Sep-2025 12:56:50 UTC] PHP   1. {main}() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-admin\admin-ajax.php:0
+[08-Sep-2025 12:56:50 UTC] PHP   2. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-admin\admin-ajax.php:22
+[08-Sep-2025 12:56:50 UTC] PHP   3. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-load.php:55
+[08-Sep-2025 12:56:50 UTC] PHP   4. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\wp-config.php:10
+[08-Sep-2025 12:56:50 UTC] PHP   5. include() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-settings.php:695
+[08-Sep-2025 13:10:40 UTC] ⏭ Skipping notification for post 239 (not first publish)
+[08-Sep-2025 13:11:45 UTC] ⚠ Notifications disabled in settings
+[08-Sep-2025 13:22:58 UTC] 📧 Sending Good Life email to: solomon.cabreza@smdevelopment.com | Status: OK
+[08-Sep-2025 13:49:08 UTC] PHP Warning:  Trying to access array offset on false in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\templates\single-property\property-banner.php on line 11
+[08-Sep-2025 13:49:08 UTC] PHP Stack trace:
+[08-Sep-2025 13:49:08 UTC] PHP   1. {main}() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php:0
+[08-Sep-2025 13:49:08 UTC] PHP   2. require() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php:7
+[08-Sep-2025 13:49:08 UTC] PHP   3. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-blog-header.php:19
+[08-Sep-2025 13:49:08 UTC] PHP   4. include() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\template-loader.php:106
+[08-Sep-2025 13:49:08 UTC] PHP   5. include() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\single-property.php:3
+[08-Sep-2025 13:50:40 UTC] PHP Warning:  Trying to access array offset on false in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\templates\single-property\property-banner.php on line 11
+[08-Sep-2025 13:50:40 UTC] PHP Stack trace:
+[08-Sep-2025 13:50:40 UTC] PHP   1. {main}() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php:0
+[08-Sep-2025 13:50:40 UTC] PHP   2. require() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php:7
+[08-Sep-2025 13:50:40 UTC] PHP   3. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-blog-header.php:19
+[08-Sep-2025 13:50:40 UTC] PHP   4. include() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\template-loader.php:106
+[08-Sep-2025 13:50:40 UTC] PHP   5. include() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\single-property.php:3
+[08-Sep-2025 13:51:08 UTC] PHP Warning:  Trying to access array offset on false in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\templates\single-property\property-banner.php on line 11
+[08-Sep-2025 13:51:08 UTC] PHP Stack trace:
+[08-Sep-2025 13:51:08 UTC] PHP   1. {main}() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php:0
+[08-Sep-2025 13:51:08 UTC] PHP   2. require() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php:7
+[08-Sep-2025 13:51:08 UTC] PHP   3. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-blog-header.php:19
+[08-Sep-2025 13:51:08 UTC] PHP   4. include() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\template-loader.php:106
+[08-Sep-2025 13:51:08 UTC] PHP   5. include() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\single-property.php:3
+[08-Sep-2025 13:51:26 UTC] PHP Warning:  Trying to access array offset on false in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\templates\single-property\property-banner.php on line 11
+[08-Sep-2025 13:51:26 UTC] PHP Stack trace:
+[08-Sep-2025 13:51:26 UTC] PHP   1. {main}() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php:0
+[08-Sep-2025 13:51:26 UTC] PHP   2. require() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php:7
+[08-Sep-2025 13:51:26 UTC] PHP   3. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-blog-header.php:19
+[08-Sep-2025 13:51:26 UTC] PHP   4. include() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\template-loader.php:106
+[08-Sep-2025 13:51:26 UTC] PHP   5. include() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\single-property.php:3
+[08-Sep-2025 14:42:57 UTC] PHP Warning:  Array to string conversion in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\plugins\advanced-custom-fields-pro-main\includes\api\api-template.php on line 521
+[08-Sep-2025 14:42:57 UTC] PHP Stack trace:
+[08-Sep-2025 14:42:57 UTC] PHP   1. {main}() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php:0
+[08-Sep-2025 14:42:57 UTC] PHP   2. require() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php:7
+[08-Sep-2025 14:42:57 UTC] PHP   3. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-blog-header.php:19
+[08-Sep-2025 14:42:57 UTC] PHP   4. include() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\template-loader.php:106
+[08-Sep-2025 14:42:57 UTC] PHP   5. include() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\single-property.php:4
+[08-Sep-2025 14:42:57 UTC] PHP   6. have_rows($selector = 'units', $post_id = ['location_detail' => 'Reliance St., Brgy. Nagkaisang Nayon, Novaliches, Quezon City\r\n\r\n', 'price_range' => 'Php 3.1 - 3.8 M', 'units' => [0 => [...]]]) C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\templates\single-property\property-details.php:39
+[08-Sep-2025 14:42:57 UTC] PHP Warning:  Array to string conversion in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\plugins\advanced-custom-fields-pro-main\includes\api\api-template.php on line 521
+[08-Sep-2025 14:42:57 UTC] PHP Stack trace:
+[08-Sep-2025 14:42:57 UTC] PHP   1. {main}() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php:0
+[08-Sep-2025 14:42:57 UTC] PHP   2. require() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php:7
+[08-Sep-2025 14:42:57 UTC] PHP   3. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-blog-header.php:19
+[08-Sep-2025 14:42:57 UTC] PHP   4. include() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\template-loader.php:106
+[08-Sep-2025 14:42:57 UTC] PHP   5. include() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\single-property.php:4
+[08-Sep-2025 14:42:57 UTC] PHP   6. have_rows($selector = 'units', $post_id = ['location_detail' => 'Reliance St., Brgy. Nagkaisang Nayon, Novaliches, Quezon City\r\n\r\n', 'price_range' => 'Php 3.1 - 3.8 M', 'units' => [0 => [...]]]) C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\templates\single-property\property-details.php:58
+[08-Sep-2025 14:43:10 UTC] PHP Warning:  Array to string conversion in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\plugins\advanced-custom-fields-pro-main\includes\api\api-template.php on line 521
+[08-Sep-2025 14:43:10 UTC] PHP Stack trace:
+[08-Sep-2025 14:43:10 UTC] PHP   1. {main}() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php:0
+[08-Sep-2025 14:43:10 UTC] PHP   2. require() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php:7
+[08-Sep-2025 14:43:10 UTC] PHP   3. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-blog-header.php:19
+[08-Sep-2025 14:43:10 UTC] PHP   4. include() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\template-loader.php:106
+[08-Sep-2025 14:43:10 UTC] PHP   5. include() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\single-property.php:4
+[08-Sep-2025 14:43:10 UTC] PHP   6. have_rows($selector = 'units', $post_id = ['location_detail' => 'Reliance St., Brgy. Nagkaisang Nayon, Novaliches, Quezon City\r\n\r\n', 'price_range' => 'Php 3.1 - 3.8 M', 'units' => [0 => [...]]]) C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\templates\single-property\property-details.php:39
+[08-Sep-2025 14:43:10 UTC] PHP Warning:  Array to string conversion in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\plugins\advanced-custom-fields-pro-main\includes\api\api-template.php on line 521
+[08-Sep-2025 14:43:10 UTC] PHP Stack trace:
+[08-Sep-2025 14:43:10 UTC] PHP   1. {main}() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php:0
+[08-Sep-2025 14:43:10 UTC] PHP   2. require() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php:7
+[08-Sep-2025 14:43:10 UTC] PHP   3. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-blog-header.php:19
+[08-Sep-2025 14:43:10 UTC] PHP   4. include() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\template-loader.php:106
+[08-Sep-2025 14:43:10 UTC] PHP   5. include() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\single-property.php:4
+[08-Sep-2025 14:43:10 UTC] PHP   6. have_rows($selector = 'units', $post_id = ['location_detail' => 'Reliance St., Brgy. Nagkaisang Nayon, Novaliches, Quezon City\r\n\r\n', 'price_range' => 'Php 3.1 - 3.8 M', 'units' => [0 => [...]]]) C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\templates\single-property\property-details.php:58
+[08-Sep-2025 14:44:04 UTC] PHP Warning:  Array to string conversion in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\plugins\advanced-custom-fields-pro-main\includes\api\api-template.php on line 521
+[08-Sep-2025 14:44:04 UTC] PHP Stack trace:
+[08-Sep-2025 14:44:04 UTC] PHP   1. {main}() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php:0
+[08-Sep-2025 14:44:04 UTC] PHP   2. require() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php:7
+[08-Sep-2025 14:44:04 UTC] PHP   3. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-blog-header.php:19
+[08-Sep-2025 14:44:04 UTC] PHP   4. include() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\template-loader.php:106
+[08-Sep-2025 14:44:04 UTC] PHP   5. include() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\single-property.php:4
+[08-Sep-2025 14:44:04 UTC] PHP   6. have_rows($selector = 'units', $post_id = ['location_detail' => 'Reliance St., Brgy. Nagkaisang Nayon, Novaliches, Quezon City\r\n\r\n', 'price_range' => 'Php 3.1 - 3.8 M', 'units' => [0 => [...]]]) C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\templates\single-property\property-details.php:39
+[08-Sep-2025 14:44:04 UTC] PHP Warning:  Array to string conversion in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\plugins\advanced-custom-fields-pro-main\includes\api\api-template.php on line 521
+[08-Sep-2025 14:44:04 UTC] PHP Stack trace:
+[08-Sep-2025 14:44:04 UTC] PHP   1. {main}() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php:0
+[08-Sep-2025 14:44:04 UTC] PHP   2. require() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php:7
+[08-Sep-2025 14:44:04 UTC] PHP   3. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-blog-header.php:19
+[08-Sep-2025 14:44:04 UTC] PHP   4. include() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\template-loader.php:106
+[08-Sep-2025 14:44:04 UTC] PHP   5. include() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\single-property.php:4
+[08-Sep-2025 14:44:04 UTC] PHP   6. have_rows($selector = 'units', $post_id = ['location_detail' => 'Reliance St., Brgy. Nagkaisang Nayon, Novaliches, Quezon City\r\n\r\n', 'price_range' => 'Php 3.1 - 3.8 M', 'units' => [0 => [...]]]) C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\templates\single-property\property-details.php:58
+[08-Sep-2025 14:46:55 UTC] PHP Warning:  Array to string conversion in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\plugins\advanced-custom-fields-pro-main\includes\api\api-template.php on line 521
+[08-Sep-2025 14:46:55 UTC] PHP Stack trace:
+[08-Sep-2025 14:46:55 UTC] PHP   1. {main}() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php:0
+[08-Sep-2025 14:46:55 UTC] PHP   2. require() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php:7
+[08-Sep-2025 14:46:55 UTC] PHP   3. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-blog-header.php:19
+[08-Sep-2025 14:46:55 UTC] PHP   4. include() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\template-loader.php:106
+[08-Sep-2025 14:46:55 UTC] PHP   5. include() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\single-property.php:4
+[08-Sep-2025 14:46:55 UTC] PHP   6. have_rows($selector = 'units', $post_id = ['location_detail' => 'Reliance St., Brgy. Nagkaisang Nayon, Novaliches, Quezon City\r\n\r\n', 'price_range' => 'Php 3.1 - 3.8 M', 'units' => [0 => [...]]]) C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\templates\single-property\property-details.php:39
+[08-Sep-2025 14:46:55 UTC] PHP Warning:  Array to string conversion in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\plugins\advanced-custom-fields-pro-main\includes\api\api-template.php on line 521
+[08-Sep-2025 14:46:55 UTC] PHP Stack trace:
+[08-Sep-2025 14:46:55 UTC] PHP   1. {main}() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php:0
+[08-Sep-2025 14:46:55 UTC] PHP   2. require() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php:7
+[08-Sep-2025 14:46:55 UTC] PHP   3. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-blog-header.php:19
+[08-Sep-2025 14:46:55 UTC] PHP   4. include() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\template-loader.php:106
+[08-Sep-2025 14:46:55 UTC] PHP   5. include() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\single-property.php:4
+[08-Sep-2025 14:46:55 UTC] PHP   6. have_rows($selector = 'units', $post_id = ['location_detail' => 'Reliance St., Brgy. Nagkaisang Nayon, Novaliches, Quezon City\r\n\r\n', 'price_range' => 'Php 3.1 - 3.8 M', 'units' => [0 => [...]]]) C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\templates\single-property\property-details.php:60
+[08-Sep-2025 14:49:51 UTC] PHP Warning:  Array to string conversion in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\plugins\advanced-custom-fields-pro-main\includes\api\api-template.php on line 521
+[08-Sep-2025 14:49:51 UTC] PHP Stack trace:
+[08-Sep-2025 14:49:51 UTC] PHP   1. {main}() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php:0
+[08-Sep-2025 14:49:51 UTC] PHP   2. require() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php:7
+[08-Sep-2025 14:49:51 UTC] PHP   3. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-blog-header.php:19
+[08-Sep-2025 14:49:51 UTC] PHP   4. include() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\template-loader.php:106
+[08-Sep-2025 14:49:51 UTC] PHP   5. include() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\single-property.php:4
+[08-Sep-2025 14:49:51 UTC] PHP   6. have_rows($selector = 'units', $post_id = ['location_detail' => 'Reliance St., Brgy. Nagkaisang Nayon, Novaliches, Quezon City\r\n\r\n', 'price_range' => 'Php 3.1 - 3.8 M', 'units' => [0 => [...]]]) C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\templates\single-property\property-details.php:7
+[08-Sep-2025 14:51:33 UTC] PHP Warning:  Array to string conversion in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\plugins\advanced-custom-fields-pro-main\includes\api\api-template.php on line 521
+[08-Sep-2025 14:51:33 UTC] PHP Stack trace:
+[08-Sep-2025 14:51:33 UTC] PHP   1. {main}() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php:0
+[08-Sep-2025 14:51:33 UTC] PHP   2. require() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php:7
+[08-Sep-2025 14:51:33 UTC] PHP   3. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-blog-header.php:19
+[08-Sep-2025 14:51:33 UTC] PHP   4. include() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\template-loader.php:106
+[08-Sep-2025 14:51:33 UTC] PHP   5. include() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\single-property.php:4
+[08-Sep-2025 14:51:33 UTC] PHP   6. have_rows($selector = 'units', $post_id = ['location_detail' => 'Reliance St., Brgy. Nagkaisang Nayon, Novaliches, Quezon City\r\n\r\n', 'price_range' => 'Php 3.1 - 3.8 M', 'units' => [0 => [...]]]) C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\templates\single-property\property-details.php:7
+[08-Sep-2025 14:52:04 UTC] PHP Warning:  Array to string conversion in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\plugins\advanced-custom-fields-pro-main\includes\api\api-template.php on line 521
+[08-Sep-2025 14:52:04 UTC] PHP Stack trace:
+[08-Sep-2025 14:52:04 UTC] PHP   1. {main}() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php:0
+[08-Sep-2025 14:52:04 UTC] PHP   2. require() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php:7
+[08-Sep-2025 14:52:04 UTC] PHP   3. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-blog-header.php:19
+[08-Sep-2025 14:52:04 UTC] PHP   4. include() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\template-loader.php:106
+[08-Sep-2025 14:52:04 UTC] PHP   5. include() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\single-property.php:4
+[08-Sep-2025 14:52:04 UTC] PHP   6. have_rows($selector = 'units', $post_id = ['location_detail' => 'Reliance St., Brgy. Nagkaisang Nayon, Novaliches, Quezon City\r\n\r\n', 'price_range' => 'Php 3.1 - 3.8 M', 'units' => [0 => [...]]]) C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\templates\single-property\property-details.php:8
