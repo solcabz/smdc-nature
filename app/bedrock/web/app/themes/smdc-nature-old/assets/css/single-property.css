@@ -1,0 +1,200 @@
+.single-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 60px ;
+    height: 100dvh;
+}
+
+.single-kv {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-height: 960px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+    overflow: hidden; /* Keeps gradient inside rounded corners */
+    z-index: 0; /* Base layer */
+}
+
+.single-kv::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0));
+    border-radius: 0 0 40px 40px;
+    pointer-events: none;
+    z-index: 1; /* Gradient above background */
+}
+
+.icon-wrapper {
+    position: relative;
+    width: 100%;
+    bottom: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+    z-index: 2; /* Ensures icon-wrapper stays in front of gradient */
+}
+
+.property-logo {
+  max-width: 200px;
+  width: 100%;
+  height: auto;
+}
+
+.single-status {
+  margin-top: 1rem;
+  color: #ffffff;
+  display: inline-block;
+  padding: 0 1rem;
+  border-radius: 6px;
+  font-size: 20px;
+}
+
+.single-status p{
+  color: #ffffff;
+  font-size: 28px;
+  font-family: 'HenrySans', sans-serif;
+}
+
+/* details */
+.property-details {
+  padding: 50px 15px; /* reduced from 80px */
+  text-align: center;
+  background: #fdfdf9;
+  color: #333;
+}
+
+.section-header h2 {
+  font-size: 2rem; /* reduced */
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+
+.section-header .highlight {
+  color: #c76a2f;
+  font-weight: 600;
+}
+
+.section-header p {
+  max-width: 700px; /* tighter width */
+  margin: 0 auto 30px; /* reduced */
+  line-height: 1.5;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* smaller min */
+  gap: 20px; /* reduced from 40px */
+  margin-bottom: 30px; /* reduced */
+}
+
+.info-item {
+  text-align: center;
+  border-right: 1px solid #ddd;
+  padding: 0 15px;
+}
+
+.info-item:last-child {
+  border-right: none;
+}
+
+.info-item i {
+  display: block;
+  font-size: 1.5rem; /* smaller icons */
+  margin-bottom: 8px;
+  color: #345b34;
+}
+
+.features {
+  margin: 30px auto;
+  max-width: 480px; /* slightly reduced */
+  text-align: left;
+}
+
+.features ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.features li {
+  padding: 4px 0;
+  font-size: 0.95rem; /* smaller text */
+}
+
+.cta-buttons {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* tighter */
+  justify-content: center;
+}
+
+.cta-buttons .btn {
+  font-size: 0.9rem;
+  padding: 10px 16px; /* smaller buttons */
+}
+
+/* ========================
+   Responsive Tweaks
+   ======================== */
+@media (max-width: 768px) {
+  .property-details {
+    padding: 40px 10px;
+  }
+
+  .section-header h2 {
+    font-size: 1.6rem;
+  }
+
+  .section-header p {
+    font-size: 0.9rem;
+  }
+
+  .info-grid {
+    gap: 15px;
+  }
+
+  .info-item {
+    padding: 0 10px;
+    border-right: none; /* remove borders on mobile */
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+  }
+
+  .info-item:last-child {
+    border-bottom: none;
+  }
+
+  .features {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-header h2 {
+    font-size: 1.4rem;
+  }
+
+  .info-item i {
+    font-size: 1.3rem;
+  }
+
+  .cta-buttons .btn {
+    width: 100%; /* stack buttons */
+    text-align: center;
+  }
+}

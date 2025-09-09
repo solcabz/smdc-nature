@@ -771,3 +771,41 @@ Stack trace:
 [08-Sep-2025 14:52:04 UTC] PHP   4. include() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\template-loader.php:106
 [08-Sep-2025 14:52:04 UTC] PHP   5. include() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\single-property.php:4
 [08-Sep-2025 14:52:04 UTC] PHP   6. have_rows($selector = 'units', $post_id = ['location_detail' => 'Reliance St., Brgy. Nagkaisang Nayon, Novaliches, Quezon City\r\n\r\n', 'price_range' => 'Php 3.1 - 3.8 M', 'units' => [0 => [...]]]) C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\templates\single-property\property-details.php:8
+[09-Sep-2025 12:20:19 UTC] PHP Warning:  Trying to access array offset on false in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\templates\single-property\property-banner.php on line 13
+[09-Sep-2025 12:20:19 UTC] PHP Stack trace:
+[09-Sep-2025 12:20:19 UTC] PHP   1. {main}() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php:0
+[09-Sep-2025 12:20:19 UTC] PHP   2. require() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php:7
+[09-Sep-2025 12:20:19 UTC] PHP   3. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-blog-header.php:19
+[09-Sep-2025 12:20:19 UTC] PHP   4. include() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\template-loader.php:106
+[09-Sep-2025 12:20:19 UTC] PHP   5. include() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\single-property.php:3
+[09-Sep-2025 13:02:34 UTC] PHP Warning:  Trying to access array offset on false in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\templates\single-property\property-banner.php on line 13
+[09-Sep-2025 13:02:34 UTC] PHP Stack trace:
+[09-Sep-2025 13:02:34 UTC] PHP   1. {main}() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php:0
+[09-Sep-2025 13:02:34 UTC] PHP   2. require() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php:7
+[09-Sep-2025 13:02:34 UTC] PHP   3. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-blog-header.php:19
+[09-Sep-2025 13:02:34 UTC] PHP   4. include() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\template-loader.php:106
+[09-Sep-2025 13:02:34 UTC] PHP   5. include() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\single-property.php:3
+[09-Sep-2025 15:20:32 UTC] PHP Warning:  Attempt to read property "title" on null in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\class-wp-customize-widgets.php on line 926
+[09-Sep-2025 15:20:32 UTC] PHP Stack trace:
+[09-Sep-2025 15:20:32 UTC] PHP   1. {main}() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-admin\customize.php:0
+[09-Sep-2025 15:20:32 UTC] PHP   2. do_action($hook_name = 'customize_controls_print_footer_scripts') C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-admin\customize.php:306
+[09-Sep-2025 15:20:32 UTC] PHP   3. WP_Hook->do_action($args = [0 => '']) C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\plugin.php:517
+[09-Sep-2025 15:20:32 UTC] PHP   4. WP_Hook->apply_filters($value = '', $args = [0 => '']) C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\class-wp-hook.php:348
+[09-Sep-2025 15:20:32 UTC] PHP   5. WP_Customize_Widgets->output_widget_control_templates('') C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\class-wp-hook.php:324
+[09-Sep-2025 15:46:59 UTC] Cron reschedule event error for hook: action_scheduler_run_queue, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"every_minute","args":["WP Cron"],"interval":60}
+[09-Sep-2025 16:02:21 UTC] ⏭ Skipping notification for post 241 (not first publish)
+[09-Sep-2025 16:03:26 UTC] ⏭ Skipping notification for post 194 (not first publish)
+[09-Sep-2025 16:10:11 UTC] PHP Warning:  Trying to access array offset on false in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\templates\single-property\property-banner.php on line 13
+[09-Sep-2025 16:10:11 UTC] PHP Stack trace:
+[09-Sep-2025 16:10:11 UTC] PHP   1. {main}() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php:0
+[09-Sep-2025 16:10:11 UTC] PHP   2. require() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php:7
+[09-Sep-2025 16:10:11 UTC] PHP   3. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-blog-header.php:19
+[09-Sep-2025 16:10:11 UTC] PHP   4. include() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\template-loader.php:106
+[09-Sep-2025 16:10:11 UTC] PHP   5. include() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\single-property.php:3
+[09-Sep-2025 16:10:27 UTC] PHP Warning:  Trying to access array offset on false in C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\templates\single-property\property-banner.php on line 13
+[09-Sep-2025 16:10:27 UTC] PHP Stack trace:
+[09-Sep-2025 16:10:27 UTC] PHP   1. {main}() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php:0
+[09-Sep-2025 16:10:27 UTC] PHP   2. require() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\index.php:7
+[09-Sep-2025 16:10:27 UTC] PHP   3. require_once() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-blog-header.php:19
+[09-Sep-2025 16:10:27 UTC] PHP   4. include() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\nature-cms\wp-includes\template-loader.php:106
+[09-Sep-2025 16:10:27 UTC] PHP   5. include() C:\Users\solca\Local Sites\smdcnature\app\bedrock\web\app\themes\smdc-nature\single-property.php:3

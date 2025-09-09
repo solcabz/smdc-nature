@@ -227,6 +227,11 @@ body.menu-open .menu-backdrop {
   width: 150px;
 }
 
+.amp {
+  font-style: italic;
+  font-family: "Cormorant Infant", serif;
+}
+
 .show-mobile {
   display: none;
 

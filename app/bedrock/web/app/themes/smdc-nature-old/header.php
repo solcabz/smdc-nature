@@ -48,26 +48,33 @@
       <!-- ✅ Close button -->
       <button class="close-menu" aria-label="Close Menu">&times;</button>
 
-      <div class="menu-links">
-         <?php
-          $menu = wp_nav_menu([
-            'theme_location' => 'primary',
-            'container'      => false,
-            'menu_class'     => 'link-lists',
-            'fallback_cb'    => false,
-            'echo'           => false
-          ]);
+        <div class="menu-links">
+          <?php
+            $menu = wp_nav_menu([
+              'theme_location' => 'primary',
+              'container'      => false,
+              'menu_class'     => 'link-lists',
+              'fallback_cb'    => false,
+              'echo'           => false
+            ]);
 
-          if ($menu) {
-            $menu = preg_replace('/<ul(.*?)>/', '<ul class="link-lists"$1>', $menu, 1);
-          } else {
-            $menu = '<ul class="link-lists"><li><a href="' . esc_url(home_url('/')) . '">Home</a></li></ul>';
-          }
+            if ($menu) {
+              // Force ul class
+              $menu = preg_replace('/<ul(.*?)>/', '<ul class="link-lists"$1>', $menu, 1);
 
-          echo $menu;
-        ?>
-      </div>
+              // Decode HTML entities so &amp; or &#038; becomes &
+              $menu = html_entity_decode($menu, ENT_QUOTES, 'UTF-8');
 
+              // Now replace plain "&" with a span
+              $menu = preg_replace('/\s&\s/', ' <span class="amp">&</span> ', $menu);
+            } else {
+              $menu = '<ul class="link-lists"><li><a href="' . esc_url(home_url('/')) . '">Home</a></li></ul>';
+            }
+
+            echo $menu;
+          ?>
+        </div>
+        
       <div class="show-mobile">
         <div class="search-container">
           <form role="search" method="get" class="search-form" action="<?php echo esc_url(home_url('/')); ?>">
